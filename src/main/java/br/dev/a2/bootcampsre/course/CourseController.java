@@ -4,6 +4,7 @@ import br.dev.a2.bootcampsre.course.model.Course;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,6 +18,7 @@ public class CourseController {
     public CourseController(CourseService service) {
         this.service = service;
     }
+
 
     @GetMapping("/course")
     public ResponseEntity<Iterable<Course>> retrieveCourses(){
