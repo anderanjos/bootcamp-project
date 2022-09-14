@@ -5,7 +5,7 @@ services:
     restart: unless-stopped
     environment:
       - MYSQL_ROOT_PASSWORD=admin
-      - MYSQL_DATABASE=bootcamp
+      - MYSQL_DATABASE=b00tcamp
     ports:
       - "3306:3306"
     volumes:

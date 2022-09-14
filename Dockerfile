@@ -15,7 +15,7 @@ MAINTAINER br.dev.a2
 
 WORKDIR /usr/src/app
 
-COPY --from=builder /home/gradle/src/build/libs/*.jar /app/bootcamp-project-0.0.1-SNAPSHOT.jar
+COPY --from=builder /home/gradle/src/build/libs/bootcamp-project-0.0.1-SNAPSHOT.jar /app/bootcamp-project-0.0.1-SNAPSHOT.jar
 
 EXPOSE 8080
 
